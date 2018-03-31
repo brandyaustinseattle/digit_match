@@ -21,25 +21,25 @@ describe "digit match" do
     end
   end
 
-  # # check for edge cases
-  # describe "edge cases" do
-  #   # if the parameter is an object, check for nil
-  #   describe "nil object input test" do
-  #     it "first input is nil" do
-  #       digit_match(nil, 4).must_equal 0
-  #     end
-  #
-  #     it "second input is nil" do
-  #       digit_match(7, nil).must_equal 0
-  #     end
-  #   end
-  #
-  #   it "first input is negative" do
-  #     digit_match(-44, 43).must_equal 0
-  #   end
-  #
-  #   it "second input is negative" do
-  #     digit_match(77, -89).must_equal 0
-  #   end
-  # end
+  # check for edge cases
+  describe "edge cases" do
+    # if the parameter is an object, check for nil
+    describe "nil object input test" do
+      it "first input is nil" do
+        digit_match(nil, 4).must_equal 0
+      end
+
+      it "second input is nil" do
+        digit_match(7, nil).must_equal 0
+      end
+    end
+
+    it "first input is negative" do
+      digit_match(-44, 43).must_equal 0
+    end
+
+    it "second input is negative" do
+      digit_match(77, -89).must_equal 0
+    end
+  end
 end
